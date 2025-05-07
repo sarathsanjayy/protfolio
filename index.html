@@ -1,0 +1,93 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "emvjW3CuoDKQoqshj",
+      });
+   })();
+</script>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navcontainer">
+      <div class="protfolio"><p class="protfoliotext">Protfolio</p></div>
+      <div class="lists">
+        <ul class="liststext">
+          <li><a href="#home">Home</a></li>
+          <li> <a href="#about"> About</a></li>
+          <li> <a href="#skills">Skills</a></li>
+          <li> <a href="#projects">Projects</a> </li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--section1 profile-->
+    <section  class="sec1">
+      <div id="home" class="imagetext" style="scroll-margin-top: 200px;">
+        <div  class="texts">
+          <p class="intro">Hello it's me</p>
+          <p class="intro1">Sarath Sanjay</p>
+        </div>
+        <div class="image">
+          <img class="photo" src="cropped_image.png" />
+        </div>
+      </div>
+    </section>
+    <!--section2 About-->
+    <section  class="sec2">
+        <div id="about" class="aboutsec"  style="scroll-margin-top: 200px;">
+            <p class="heading">About<br> I'm a self-driven web developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in creating responsive and accessible websites with clean, semantic code. I enjoy solving problems through code and continuously strive to enhance user experiences across devices. Currently focused on deepening my understanding of frontend development.</p>
+        </div>
+    </section>
+    <!--Section3 Skills-->
+    <section class="sec3">
+      <div id="skills" class="skillsec"   style="scroll-margin-top: 200px;"> 
+
+      <div class="top"><h1>Skills</h1></div>
+      <div class="skill">
+          <p class="forborder">HTML</p>
+          <p class="forborder">CSS</p>
+          <p class="forborder">Javascript</p>  
+      </div>
+    </section>
+
+    <!--section4 projects-->
+    <section class="sec4">
+      <div id="projects" class="project"  style="scroll-margin-top: 200px;">
+        <div class="projecthead"><p>Projects</p></div>
+        <div class="projectdes"><p><h3>Ease My Trip (clone)</h3>This project is a static front page clone of the EaseMyTrip website, designed to practice and showcase my skills in HTML and CSS. It includes a visually appealing layout with a header, hero section, booking interface (non-functional), promotional banners, and footer. The focus was on replicating the look and feel of a real travel site with clean design and responsive structure.</p></div>
+
+      </div>
+    </section>
+
+    <!--section5 contact-->
+    <section class="sec5">
+      <div id="contact" class="project"  style="scroll-margin-top: 200px;"><!--same class as sec4 heading-->
+        <div class="projecthead"><p>Contact Me</p></div>
+      <div class="form">
+        
+        <input class="lab"  type="text" id="name" name="name" required placeholder="Enter your Name">
+       
+        <input class="lab"  type="email" id="email" name="email" required placeholder="Email">
+        
+        <textarea class="lab" id="message" name="message" rows="5" cols="30" required placeholder="Type your Message here..."></textarea>
+        
+       <input class="lab" type="submit" onclick="mail()" value="Send">
+  
+      </div>
+    </section>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
